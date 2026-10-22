@@ -3,7 +3,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
-const API = '/api';
+const API = import.meta.env.VITE_API_URL || '/api';
 
 const cardClass = 'rounded-2xl border border-slate-200 bg-white p-5 shadow-sm';
 const buttonClass = 'rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-indigo-500';
